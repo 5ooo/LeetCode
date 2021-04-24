@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <map>
+#include <utility>
+
+using namespace std;
+
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        // 初始化备忘录
+        memo.resize(nums.size(), -1);
+        // 强盗从第 0 间房子开始抢劫
+        return dp(nums, 0);        
+    }
+private:
+    // 返回 dp[start..]能抢到的最大值
+    int dp(vector<int>& nums, int start) {
+        if (start >= nums.size())
+            return 0;
+
+        // 避免重复计算
+        if (memo[start] != -1)
+            return memo[start];
+        
+        int ret = max(
+                  dp(nums, start + 1), //不抢，去下家 
+                  dp(nums, start + 2) + nums[start] //抢，去下下家
+                  );
+
+        return ret;
+    }
+private:
+    //备忘录，避免重复计算
+    vector<int> memo;
+};
+
+
+int main()
+{
+        vector<int> test;
+	test.push_back(2);
+	test.push_back(7);
+	test.push_back(9);
+	test.push_back(3);
+	test.push_back(1);
+
+	Solution s;
+
+	printf("%d\n", s.rob(test));
+
+	return 0;
+}
