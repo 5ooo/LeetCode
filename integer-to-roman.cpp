@@ -1,7 +1,6 @@
 class Solution {
 public:
     string intToRoman(int num) {
-        
         string res;
         int tmp;
 
@@ -10,14 +9,14 @@ public:
 
         for(int i = 0; i < 13; i++)
         {
-                tmp = num / n[i];
-            
-                for(; tmp > 0; tmp--)
-                {
-                        res += r[i];
-                }
+            tmp = num / n[i];
 
-                num %= n[i];
+            for(; tmp > 0; tmp--)
+            {
+                res += r[i];
+            }
+
+            num %= n[i];
         }
 
         return res;

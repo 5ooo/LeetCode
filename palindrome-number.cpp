@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        
         vector<int> vInt;
         
         if(x < 0)

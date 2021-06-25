@@ -1,7 +1,6 @@
 class Solution {
 public:
     int maxArea(vector<int>& height) {
-
         int vSize = height.size();
         int curLen, maxLen = 0, curHeight, maxHeight = 0;
         long curArea = 0, maxArea = 0;
