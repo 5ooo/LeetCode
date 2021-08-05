@@ -5,6 +5,8 @@ C++ Solution
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1143|[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence)|[longest-common-subsequence.cpp](longest-common-subsequence.cpp)|Medium|
+|1011|[Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days)|[capacity-to-ship-packages-within-d-days.cpp](capacity-to-ship-packages-within-d-days.cpp)|Medium|
+|875|[Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas)|[koko-eating-bananas.cpp](koko-eating-bananas.cpp)|Medium|
 |695|[Max Area of Island](https://leetcode.com/problems/max-area-of-island)|[max-area-of-island.cpp](max-area-of-island.cpp)|Medium|
 |415|[Add Strings](https://leetcode.com/problems/add-strings)|[add-strings.cpp](add-strings.cpp)|Easy|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)|[intersection-of-two-arrays-ii.cpp](intersection-of-two-arrays-ii.cpp)|Easy|
